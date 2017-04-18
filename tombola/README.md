@@ -29,7 +29,8 @@ retorna falso:
 É possível carregar itens através do método "carregar":
 
 ```python
-    >>> t.carregar([1, 2])
+    >>> itens = [1, 2]
+    >>> t.carregar(itens)
     >>> t.itens
     [1, 2]
     
@@ -69,5 +70,7 @@ Uma tômbola serve para sortear elementos:
     2
     >>> t.carregada()
     False
+    >>> itens
+    [1, 2]
 
 ```
