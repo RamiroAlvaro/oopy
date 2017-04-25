@@ -15,3 +15,10 @@ class Arvore:
         self.valor = valor
         self.esquerda = esquerda
         self.direita = direita
+
+    def __iter__(self):
+        if self.esquerda is not None:
+            yield from self.esquerda
+        yield self.valor
+        if self.direita is not None:
+            yield from self.direita
